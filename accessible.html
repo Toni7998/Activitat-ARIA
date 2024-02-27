@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Título de la página</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			/* Añade esto para eliminar el margen predeterminado del cuerpo */
+		}
+
+		nav {
+			background-color: #005fbe;
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1 10px;
+		}
+
+		nav a {
+			margin: 0 64px;
+			text-decoration: none;
+			color: #ffffff;
+		}
+
+		form {
+			display: flex;
+			align-items: center;
+			margin-right: 20px;
+			/* Añade esto para dar espacio a la derecha del formulario */
+		}
+
+		form input[type="text"] {
+			width: 175px;
+			padding: 9px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+		form button {
+			margin-left: 10px;
+			padding: 17px 20px;
+			border-radius: 10px;
+			border: none;
+			background-color: #007bff;
+			color: #fff;
+		}
+
+		article {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		article h1,
+		article h2 {
+			color: #007bff;
+		}
+
+		article p {
+			line-height: 1.8;
+			font-size: 14px;
+			/* Ajusta el tamaño de la fuente */
+		}
+
+		img {
+			max-width: 35%;
+			height: auto;
+			margin: 25px;
+			flex: 0 0 auto;
+		}
+
+		.article-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.article-content div {
+			flex-grow: 1;
+		}
+
+		.article-content .right img {
+			order: -1;
+		}
+
+		.article-content:first-child img {
+			margin-left: auto;
+		}
+
+		.article-content:last-child img {
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div>
+			<a href="#" aria-label="Brand">Brand</a>
+			<a href="#" aria-label="Features">Features</a>
+			<a href="#" aria-label="Pricing">Pricing</a>
+			<a href="#" aria-label="About">About</a>
+			<a href="#" aria-label="Contact us">Contact us</a>
+		</div>
+
+		<form>
+			<input type="text" id="search" placeholder="Search">
+			<button type="submit">Search</button>
+		</form>
+	</nav>
+
+	<article>
+		<!--Titol principal-->
+		<h1 style="text-align: center;">Article title</h1>
+		<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+			esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+			qui officia deserunt mollit anim id est laborum.</p>
+
+
+		<!--Primer article amb sustitles-->
+		<div class="article-content">
+			<div>
+				<h2>Article subtitle #1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt mollit anim id est laborum.</p>
+			</div>
+			<img src="https://cdn.pixabay.com/photo/2024/01/25/23/06/iceberg-8532935_1280.jpg"
+				alt="Descripción de la imagen 1" style="margin-left: 50px;">
+			<!--La imagen es de licencia de contenido, así que no hace falta dar creditos, aquí el link: https://pixabay.com/es/photos/iceberg-oceano-antártida-frío-8532935/-->
+		</div>
+
+
+
+		<!--Segon article amb sustitles-->
+		<div class="article-content">
+			<img src="https://cdn.pixabay.com/photo/2018/06/13/18/20/waves-3473335_1280.jpg"
+				alt="Descripción de la imagen 2" style="margin-right: 50px;">
+			<!--La imagen es de licencia de contenido, así que no hace falta dar creditos, aquí el link: https://pixabay.com/es/photos/ondas-mar-oceano-playa-agua-azul-3473335/-->
+			<div>
+				<h2>Article subtitle #2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip
+					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+					dolore eu
+					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+					deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+
+	</article>
+</body>
+
+</html>
