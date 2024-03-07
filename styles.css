@@ -13,7 +13,7 @@
 		}
 
 		nav a {
-			margin: 0 64px;
+			margin: 0 50px;
 			text-decoration: none;
 			color: #ffffff;
 		}
@@ -107,4 +107,15 @@
 				max-width: 100%;
 				margin: 10px 0;
 			}
+
+		}
+
+		/* Imatge 1*/
+		.Imatge1{
+			margin-left: 20px;
+		}
+
+		/* Imatge 2*/
+		.Imatge2{
+			margin-left: 20px;
 		}
