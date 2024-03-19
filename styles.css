@@ -5,23 +5,41 @@
 
 		nav {
 			background-color: #005fbe;
-			padding: 10px 0;
+			padding: 15px 0;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			padding: 1 10px;
 		}
 
-		nav a {
+		nav ul {
+			list-style-type: none;
 			margin: 0 64px;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: left;
+			padding-right: 50px;
+		}
+
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
 			text-decoration: none;
-			color: #ffffff;
 		}
 
 		form {
 			display: flex;
 			align-items: center;
-			margin-right: 20px;
+			margin-right: 22px;
+			color: white;
+		}
+
+		form label {
+			margin-right: 5px;
 		}
 
 		form input[type="text"] {
@@ -54,16 +72,12 @@
 		article p {
 			line-height: 1.8;
 			font-size: 14px;
-			/* Ajusta el tamaño de la fuente */
 		}
 
-		img {
-			max-width: 35%;
-			height: auto;
-			margin: 25px;
-			flex: 0 0 auto;
+		.intro {
+			text-align: center;
 		}
-
+		
 		.article-content {
 			display: flex;
 			justify-content: space-between;
@@ -74,14 +88,43 @@
 			flex-grow: 1;
 		}
 
-		.article-content .right img {
-			order: -1;
+		img {
+			max-width: 35%;
+			height: auto;
+			margin: 25px;
+			flex: 0 0 auto;
 		}
 
-		.article-content:first-child img {
+		.img-left {
+			margin-right: auto;
+		}
+
+		.img-right {
 			margin-left: auto;
 		}
 
-		.article-content:last-child img {
-			margin-right: auto;
+		footer {
+			background-color: #333;
+			color: #ffffff;
+			padding: 20px 10;
+			position: relative;
+			width: 100%;
+			bottom: 0;
+			border-top: 3px solid #007bff;
+		}
+
+		.footer-content {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.footer-content h3 {
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+
+		.footer-content p {
+			font-size: 16px;
 		}
