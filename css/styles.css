@@ -1,0 +1,169 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+nav {
+	background-color: #be0000;
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0 64px;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	padding-right: 40px;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+form {
+	display: flex;
+	align-items: center;
+	margin-right: 22px;
+	color: white;
+}
+
+form label {
+	margin-right: 5px;
+}
+
+form input[type="text"] {
+	width: 175px;
+	padding: 9px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+form button {
+	margin-left: 10px;
+	padding: 17px 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: #690000;
+	color: #fff;
+}
+
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+article h1,
+article h2 {
+	color: #be0000;
+}
+
+article p {
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.intro {
+	text-align: center;
+}
+
+.article-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.article-content div {
+	flex-grow: 1;
+}
+
+img {
+	max-width: 35%;
+	height: auto;
+	margin: 25px;
+	flex: 0 0 auto;
+}
+
+.img-left {
+	margin-right: auto;
+}
+
+.img-right {
+	margin-left: auto;
+}
+
+footer {
+	background-color: #333;
+	color: #ffffff;
+	padding: 18px 10;
+	position: relative;
+	width: 100%;
+	bottom: 0;
+	border-top: 3px solid #007bff;
+}
+
+.footer-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer-content h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.footer-content p {
+	font-size: 16px;
+}
+
+.Imatge2 {
+	margin-left: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+		margin: 0;
+	}
+
+	nav li {
+		padding-right: 0;
+	}
+
+	form {
+		flex-direction: column;
+		margin-right: 0;
+	}
+
+	.article-content {
+		flex-direction: column;
+	}
+
+	img {
+		max-width: 100%;
+		margin: 10px 0;
+	}
+
+	.img-left,
+	.img-right {
+		margin: 10px 0;
+	}
+
+	footer-content {
+		padding: 10px;
+	}
+}
