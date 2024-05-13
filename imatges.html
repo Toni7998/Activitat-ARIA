@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header aria-label="Cabecera">
+        <nav role="navigation">
             <ul>
-                <li> <a href="accessible.html" aria-label="Accessible">Accessible</a> </li> 
-                <li> <a href="#" aria-label="Features">Features</a> </li>
-                <li> <a href="#" aria-label="Pricing">Pricing</a> </li>
-                <li> <a href="#" aria-label="About">About</a> </li>
-                <li> <a href="#" aria-label="Contact us">Contact us</a> </li>
-                <li> <a href="aria.html" aria-label="Aria Page">Aria</a> </li>
+                <li> <a href="accessible.html" aria-label="Ir a página Accessible">Accessible</a> </li>
+                <li> <a href="#" aria-label="Ir a la página características">Features</a> </li>
+                <li> <a href="#" aria-label="Ir a precios">Pricing</a> </li>
+                <li> <a href="#" aria-label="Ir a acerca de ">About</a> </li>
+                <li> <a href="#" aria-label="Ir a la página de contacto">Contact us</a> </li>
+                <li> <a href="aria.html" aria-label="Ir a página ARIA">Aria</a> </li>
                 <li aria-current="page"> <a href="imatges.html" aria-label="Imatges">Imatges</a> </li>
             </ul>
 
-            <form>
+            <form role="search">
                 <label for="search">Search:</label>
                 <input type="text" id="search" placeholder="Search">
                 <button type="submit">Search</button>
@@ -29,31 +29,24 @@
         </nav>
     </header>
 
-    <main>
+    <main aria-label="Contenido principal">
 
         <article>
-            <h1 class="intro">Imatges amb llicència d'us gratuit</h1>
+            <h1 class="intro">Imatges amb llicència d'ús gratuit</h1>
 
             <div class="article-content">
                 <div class="Imatge1">
-                    <h2>Imatge #1</h2>
-                    <p>Imatge 1 amb llicència de ús gratuit baix la llicència de contingut de Pixabay.</p>
-                    <a href="https://pixabay.com/es/photos/heliconia-pinzas-de-langosta-flora-8599119/"
-                        target="_blank">Imatge d'una Heliconia</a>
+                    <h2>Test #1</h2>
+                    <p>Imatge 1 fet amb Extensió Accessible Web Helper.</p>
                 </div>
-                <img src="img/heliconia.webp" alt="Imatge d'una Heliconia" class="img-right">
-
-                <!-- Enllaç: https://pixabay.com/es/photos/heliconia-pinzas-de-langosta-flora-8599119/-->
+                <img src="img/test.webp" alt='Test de la web fet amb "Accesible Web Helper"' class="img-right">
             </div>
 
             <div class="article-content">
-                <img src="img/pizza.jpg" alt="Imatge d'una pizza al costat del forn" class="img-left">
+                <img src="img/test2.jpg" alt="Test de colors fet amb WCAG Contrast checker" class="img-left">
                 <div class="Imatge2">
-                    <h2>Imatge #2</h2>
-                    <p>Imatge 2 amb llicència de ús gratuit baix la llicència de contingut de Pixabay.</p>
-                    <a href="https://pixabay.com/es/photos/pizza-comida-comida-rapida-1317699/" target="_blank">Imatge
-                        de la pizza</a>
-                    <!-- Enllaç: https://pixabay.com/es/photos/pizza-comida-comida-rapida-1317699/-->
+                    <h2>Test #2</h2>
+                    <p>Test de colors fet amb WCAG Contrast checker.</p>
                 </div>
             </div>
         </article>
